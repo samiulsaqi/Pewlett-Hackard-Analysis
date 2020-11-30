@@ -18,11 +18,11 @@ The main outcome of the analysis shows a rather tormenting picture for the compa
 
 # Summary
 
-In summary, Pewlett Hackard will need to fill a lot of positions real quickly, but there are still some wiggle rooms:
+In summary, Pewlett Hackard will need to fill a lot of positions really quickly, but there are still some wiggle rooms:
 
 - Around 90 thousand (90,328) positions will need to be filled as the silver tsunami hits them and this gets escalating to all the departments
-- There is not enough people to mentor the next generation of Pewlett Hackard employees, as eligible employees for mentorship is just 1.7% of the total retiring community.
+- There are not enough people to mentor the next generation of Pewlett Hackard employees, as eligible employees for mentorship is just 1.7% of the total retiring community.
 
 Overall, this seems like a really challenging time for Pewlett Hackard, as they need to transfer the accumulated experience and knowledge in a short amount of time. Some additional queries that might help can be:
-    -   Retiring percentage of employees by departments; or
-    -   Employees that can be promoted based on employment period so that only junior positions need to be filled.
+- Retiring percentage of employees by departments; or
+- Employees that can be promoted based on employment period so that only junior positions need to be filled.
