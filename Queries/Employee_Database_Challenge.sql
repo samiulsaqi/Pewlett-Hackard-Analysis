@@ -1,5 +1,10 @@
 -- Select Employees born between 1952 and 1955
-select e.emp_no, e.first_name, e.last_name, t.title, t.from_date, t.to_date
+select e.emp_no, 
+	e.first_name, 
+	e.last_name, 
+	t.title, 
+	t.from_date, 
+	t.to_date
 into retirement_titles
 from employees as e
 inner join titles as t
@@ -23,3 +28,22 @@ into retiring_titles
 from unique_titles as ut
 group by ut.title
 order by count desc
+
+--- Select employees from retirement eligible table for mentorship opportunity 
+select distinct on (e.emp_no) e.emp_no,
+	e.first_name, 
+	e.last_name, 
+	e.birth_date, 
+	de.from_date,
+	de.to_date,
+	t.title
+into mentorship_eligibilty
+from employees as e
+inner join dept_emp as de
+	on (e.emp_no = de.emp_no)
+inner join titles as t
+	on (e.emp_no = t.emp_no)
+where (e.birth_date between '1965-01-01' and '1965-12-31')
+and (de.to_date = '9999-01-01')
+order by e.emp_no;
+
